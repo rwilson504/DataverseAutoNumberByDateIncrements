@@ -1,4 +1,4 @@
-![Custom Auto Number in Dataverse with Fiscal Year-Based Incrementing Using Plugin Code](images/image-2.png)
+![Custom Auto Number in Dataverse with Fiscal Year-Based Incrementing Using Plugin Code](https://github.com/user-attachments/assets/d00d8c52-30ea-4f5e-a5ad-a2825b8a8a1c)
 
 In many scenarios, businesses require custom auto-numbering for records in Microsoft Dataverse that go beyond the default functionality provided. In this article, I’ll walk you through a solution that involves creating a custom auto-number field without using the out-of-the-box auto-numbering feature in Dataverse. Instead, we'll use a combination of a custom entity as a counter and a plugin that triggers on the pre-create event of the target table.
 
@@ -23,7 +23,7 @@ This setup allows you to configure fiscal years according to your organization�
 
 To automate the numbering, I developed a plugin that runs on the `pre-create` event of the target table, which in this example is **Invoices**. This plugin increments the last number in the **Fiscal Year Counter** table based on the current fiscal year and assigns the new number to the invoice.
 
-![Plugin Step on Invoice](images/image.png)
+![Plugin Step on Invoice](https://github.com/user-attachments/assets/894a9e17-4ce4-4b8a-848c-b731026822be)
 
 ### Using the Record Creation Date to Determine the Fiscal Year
 
@@ -198,13 +198,13 @@ You can download the sample solutions here:
 
 Below are screenshots showing the setup of the **Fiscal Year Counter** records. These screenshots demonstrate how to configure the Name, Start Date, End Date, and Last Number fields.
 
-![Fiscal Year Counter Records](images/image-1.png)
+![Fiscal Year Counter Records](https://github.com/user-attachments/assets/b1a3a869-8bec-4ddc-896b-332b973c381e)
 
 ### Creating New Invoices
 
 Here are screenshots showing the process of creating new invoices with the custom auto-numbering system in place. You’ll see how the plugin automatically assigns a unique invoice number based on the current fiscal year using the record creation date.
 
-![New Invoice Creation](images/2024-08-23_14-56-22.gif)
+![New Invoice Creation](https://github.com/user-attachments/assets/ff4430f2-5351-42cf-9650-94093dc92ae9)
 
 ## Conclusion
 
