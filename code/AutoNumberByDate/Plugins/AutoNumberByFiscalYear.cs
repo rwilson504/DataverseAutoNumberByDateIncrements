@@ -35,6 +35,7 @@ namespace AutoNumberByDate.Plugins
 
                 try
                 {
+                    //call the method to set the name field with the fiscal year number
                     SetNameFieldWithFiscalYearNumber(entity, service);
                 }
 
@@ -118,7 +119,7 @@ namespace AutoNumberByDate.Plugins
             }
             else
             {
-                //if no counter was found thow an error
+                //if no counter was found throw an error
                 throw new InvalidPluginExecutionException("No counter was found for the current fiscal year. Please contact your system administrator.");
             }
         }
